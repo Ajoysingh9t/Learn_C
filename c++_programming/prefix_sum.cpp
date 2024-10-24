@@ -44,3 +44,19 @@ int main()
     solve();
     return 0;
 }
+//sample output
+/*
+input
+6
+3 6 2 8 9 2
+4
+2 3
+4 6
+1 5
+3 6
+output 
+8
+19
+28
+21
+*/
