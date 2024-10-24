@@ -1,23 +1,26 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/cpp
 {
 	"name": "C++",
 	"build": {
 		"dockerfile": "Dockerfile"
+	},
+
+	// "extensions": [
+		
+
+	"postCreateCommand": "mkdir -p ~/.config/Code/User/snippets && echo '{ \"C++ Snippets\": { \"prefix\": \"template\", \"body\": [ \"#include <bits/stdc++.h>\", \"#define optimize() \\\", \"ios_base::sync_with_stdio(0); \\\", \"cin.tie(0); \\\", \"cout.tie(0); \", \"#define endl \\'\\n\\'\", \"#define ll long long\", \"#define yes \\\"YES\\\\n\\\"\", \"#define no \\\"NO\\\\n\\\"\", \"using namespace std;\", \"void inputOutput(){\", \"#ifndef ONLINE_JUDGE\", \"freopen(\\\"input.txt\\\", \\\"r\\\", stdin);\", \"freopen(\\\"output.txt\\\", \\\"w\\\", stdout);\", \"#endif\", \"}\", \"void solve(){\", \"}\", \"int main()\", \"{\", \"inputOutput();\", \"solve();\", \"return 0;\" ] }, \"description\": \"C++ Competitive Programming Template\" }' > ~/.config/Code/User/snippets/cpp.json",
+
+	"remoteUser": "root",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools",        
+		"formulahendry.code-runner"  
+	],
+	"settings": {
+				"editor.fontSize": 14,
+				"terminal.integrated.fontSize": 14,
+				"editor.wordWrap": "on"
+			}
+		}
 	}
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "gcc -v",
-
-	// Configure tool-specific properties.
-	// "customizations": {},
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-	// "remoteUser": "root"
 }
