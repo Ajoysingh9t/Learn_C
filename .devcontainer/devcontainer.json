@@ -3,9 +3,13 @@
 	"customizations": {
 		"vscode": {
 			"extensions": [
-				"ms-vscode.cpptools",        
-		"formulahendry.code-runner"  
-	],
+				"ms-vscode.cpptools",
+				"formulahendry.code-runner",
+				"ms-vscode.cpptools-extension-pack",
+				"ms-vscode.cmake-tools",
+				"twxs.cmake",
+				"ms-vscode.cpptools-themes"
+			],
 	"settings": {
 				"editor.fontSize": 14,
 				"terminal.integrated.fontSize": 14,
